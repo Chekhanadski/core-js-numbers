@@ -11,7 +11,7 @@
  *   5*x = 0         => 0
  */
 function getLinearEquationRoot(a, b) {
-  return Math.sqrt(-b / a);
+  return -b / a;
 }
 
 getLinearEquationRoot();

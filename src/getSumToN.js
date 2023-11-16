@@ -11,7 +11,7 @@
  */
 function getSumToN(n) {
   let sum = 0;
-  for (const i = 1; i <= n; i + 1) {
+  for (let i = 1; i <= n; i += 1) {
     sum += i;
   }
 

@@ -9,7 +9,7 @@
  * 12345, 2    => '1.23e+4'
  */
 function toExponential(number, fractionDigits) {
-  return Math.exp(number).toFixed(fractionDigits);
+  return number.toExponential(fractionDigits);
 }
 
 toExponential();

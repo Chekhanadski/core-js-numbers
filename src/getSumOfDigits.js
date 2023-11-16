@@ -12,7 +12,7 @@
 function getSumOfDigits(num) {
   const strNum = String(num);
   let sum = 0;
-  for (const i = 0; i < num; i + 1) {
+  for (let i = 0; i < strNum.length; i += 1) {
     sum += +strNum[i];
   }
 
