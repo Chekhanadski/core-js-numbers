@@ -497,7 +497,7 @@ function getFloatOnString(str) {
  */
 function getIntegerOnString(str, base) {
   const number = Number.parseInt(str, base);
-  return typeof number !== 'boolean' ? NaN : number;
+  return typeof number !== 'number' ? NaN : number;
 }
 
 /**
