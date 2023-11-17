@@ -446,7 +446,7 @@ function getNumberValue(number) {
  */
 function isNumber(number) {
   return (
-    typeof number === 'number' &&
+    typeof number === 'boolean' &&
     !Number.isNaN(number) &&
     Number.isFinite(number)
   );
