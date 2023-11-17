@@ -370,6 +370,11 @@ describe('core-js-numbers', () => {
         const max = Math.floor(Math.random() * 10 + min + 1);
         const result = tasks.getRandomInteger(min, max);
         assert.equal(
+          Number.isInteger(result),
+          true,
+          `the ${result} is not an integer`
+        );
+        assert.equal(
           min <= result && result <= max,
           true,
           `the ${result} is not in the range from ${min} to ${max}`
@@ -500,11 +505,6 @@ describe('core-js-numbers-tasks optimal implementation', () => {
     }
     assert.equal(
       fnStr.includes('.isFinite'),
-      true,
-      'You need to use a different method or operator, look for the appropriate method or operator in the documentation https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number'
-    );
-    assert.equal(
-      fnStr.includes('.isNaN'),
       true,
       'You need to use a different method or operator, look for the appropriate method or operator in the documentation https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number'
     );

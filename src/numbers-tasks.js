@@ -104,7 +104,6 @@ function getLinearEquationRoot(a, b) {
  *   (0,1) (0,-1)    => π
  *   (0,-1) (1,0)    => π/2
  *   (0,1) (0,1)     => 0
- *   (0,1) (1,2)     => 0
  */
 function getAngleBetweenVectors(x1, y1, x2, y2) {
   const cosAngle =
@@ -117,6 +116,7 @@ function getAngleBetweenVectors(x1, y1, x2, y2) {
 
 /**
  * Returns a last digit of a integer number.
+ * The input parameter will always be greater than or equal to zero and will be in decimal notation.
  *
  * @param {number} value
  * @return {number}
@@ -493,7 +493,7 @@ function getFloatOnString(str) {
  * '4.567abcdefgh', 10  => 4
  * 'abcdefgh', 10       => NaN
  * '1.234', 2           => 1
- * '10', 8              => 1
+ * '10', 8              => 8
  */
 function getIntegerOnString(str, base) {
   const number = Number.parseInt(str, base);
